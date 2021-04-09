@@ -1,1 +1,12 @@
-FROM iprobedroid/swgoh-arena-tracker:beta-24
+FROM iprobedroid/swgoh-arena-tracker:beta-23 as builder
+FROM mcr.microsoft.com/dotnet/runtime:5.0
+WORKDIR /app
+COPY --from=builder /app .
+ENTRYPOINT ["dotnet", "SimpleTracker.dll"]
+
+ENV DISCORD_WEB_HOOK=https://discord.com/api/webhooks/830049826573516890/OrR7SZiMjnCm2wGeCX7lTjYy8cSAMwv4BHEs_fRp-ZrvHGOVfMHhQYF4tB8v0eG_vUDf
+ENV ARENA_TYPE=FLEET
+ENV ALLY_CODES=351411551,688884174,659458458,842749728
+ENV CUSTOM_MESSAGE_STATUS="%USER_ICON% `%PLAYER_NAME%` `is at %CURRENT_RANK%.` PO `in %TIME_TO_PO%`"
+ENV CUSTOM_MESSAGE_CLIMB="%USER_ICON% `%PLAYER_NAME%` \<:b_up:806635916352946176\> from %PREVIOUS_RANK% to %CURRENT_RANK%. PO in %TIME_TO_PO%"
+ENV CUSTOM_MESSAGE_DROP="%USER_ICON% `%PLAYER_NAME%` \<:b_down:806635586513272842\> from %PREVIOUS_RANK% to %CURRENT_RANK%. PO in %TIME_TO_PO%"
