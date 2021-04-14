@@ -1,5 +1,11 @@
 [
   {
+    "name": "Afengers",
+    "allyCode": "559175586",
+    "discordId": "",
+    "userIcon": "<:enemy:830094103869521974>"
+  },
+  {
     "name": "AsianStyle",
     "allyCode": "417379776",
     "discordId": "",
@@ -126,10 +132,22 @@
     "userIcon": "<:ally:830096134210191410>"
   },
   {
+    "name": "The Hound",
+    "allyCode": "624329566",
+    "discordId": "",
+    "userIcon": "<:enemy:830094103869521974>"
+  },
+  {
     "name": "VipBlade",
     "allyCode": "286676719",
     "discordId": "",
     "userIcon": "<:ally:830096134210191410>"
+  },
+  {
+    "name": "Y3NZ",
+    "allyCode": "184226295",
+    "discordId": "",
+    "userIcon": "<:enemy:830094103869521974>"
   },
   {
     "name": "darthdemos",
@@ -154,6 +172,12 @@
     "allyCode": "358132189",
     "discordId": "",
     "userIcon": "<:ally:830096134210191410>"
+  },
+  {
+    "name": "Пацэфист",
+    "allyCode": "621827562",
+    "discordId": "",
+    "userIcon": "<:enemy:830094103869521974>"
   },
   {
     "name": "Соло",
